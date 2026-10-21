@@ -1,0 +1,5 @@
+1. mTransform is the best candidate--it's non-specific to sprites, as it's a scale and position function that can be easily applied
+to other objects with useful purpose. Easy examples include colliders, cameras, and even sound triggers.
+
+2. Render sprites that are not translucent first--prioritizng background elements, then do the translucent sprites to avoid layering issues and 
+sprites muddling each other. Between translucent sprites, back to front is preferable because blending isn't commutative--order does matter in this case.
